@@ -2,12 +2,11 @@
 # Author: Fernando Rivera
 # Asterki Dev "Spark Curiosity" - Microsoft Learn Student Ambassador Program
 
-# Importar las bibliotecas necesarias
-import requests  # Esta biblioteca nos ayuda a pedir cosas de internet (APIs)
-import uuid  # Esta biblioteca nos ayuda a crear un número único y aleatorio
-import json  # Esta biblioteca nos ayuda a trabajar con datos en formato JSON (como un lenguaje que entienden las computadoras)
-import dotenv  # Esta biblioteca nos ayuda a usar cosas del sistema, como las variables de entorno
-import os  # Esta biblioteca nos ayuda a trabajar con el sistema operativo
+import requests  
+import uuid  
+import json 
+import dotenv 
+import os 
 
 config = dotenv.dotenv_values(".env")  # Carga las variables de entorno desde el archivo .env
 
@@ -33,8 +32,8 @@ texto_a_traducir = input("Ingrese el texto a traducir: ")
 # Configurar los parámetros de nuestra solicitud
 params = {
     'api-version': '3.0',  # La versión de la API (como la versión del juego)
-    'from': lenguaje_entrada,  # El idioma del texto original (inglés)
-    'to': [lenguaje_salida1, lenguaje_salida2]  # Los idiomas a los que queremos traducir (francés y zulú)
+    'from': lenguaje_entrada,  
+    'to': [lenguaje_salida1, lenguaje_salida2] 
 }
 
 # Configurar los encabezados de nuestra solicitud
